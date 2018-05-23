@@ -1,0 +1,16 @@
+<head>
+    <h1>List of registered students</h1>
+</head>
+
+{% for list in list %}
+<div>
+    <b><u>Student ID</u></b> {{list.s_id}}<br/><br/>
+    <b><u>Username</u></b> {{list.username}}<br/><br/>
+    <b><u>First Name</u></b> {{list.f_name}}<br/><br/>
+    <b><u>Last Name</u></b> {{list.l_name}}<br/><br/>
+    <b><u>College</u></b> {{list.college}}<br/><br/>
+    <b><u>Branch</u></b> {{list.branch}}<br/><br/>
+    ------------------------------------------------------------------------------------
+</div>
+
+{% endfor %}
